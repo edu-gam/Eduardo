@@ -1,0 +1,7 @@
+.barra {
+    background-color: aliceblue;
+    border-radius: 10px;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}

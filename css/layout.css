@@ -597,3 +597,30 @@
 .logo span {
     color: var(--verde-profundo);
 }
+
+
+.img-cliente img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        width: 140px;
+    }
+}
+
+.img-cliente,
+.img-cliente:visited,
+.img-cliente:hover,
+.img-cliente:active {
+    color: var(--verde-profundo);
+    text-decoration: none;
+}
+
+.img-cliente span {
+    color: var(--verde-profundo);
+}
