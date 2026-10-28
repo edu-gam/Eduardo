@@ -1,0 +1,122 @@
+.boton {
+    display: inline-block;
+    padding: 13px 25px;
+
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+
+    border: 2px solid var(--verde-oscuro);
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+    background-color: var(--verde-profundo);
+    border-color: var(--verde-profundo);
+    transform: translateY(-2px);
+}
+
+.boton-secundario {
+    display: inline-block;
+    padding: 9px 16px;
+
+    color: var(--verde-oscuro);
+    background-color: var(--blanco);
+
+    border: 1px solid var(--verde-oscuro);
+    border-radius: 6px;
+
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.boton-secundario:hover {
+    color: var(--blanco);
+    background-color: var(--verde-oscuro);
+}
+
+.tarjeta-producto {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(30, 70, 40, 0.12);
+}
+
+.tarjeta-producto img {
+    transition: transform 0.4s ease;
+}
+
+.tarjeta-producto:hover img {
+    transform: scale(1.04);
+}
+
+.categoria {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.categoria:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--verde-principal);
+
+    box-shadow: 0 8px 20px rgba(30, 70, 40, 0.08);
+}
+
+.categoria span {
+    transition: transform 0.3s ease;
+}
+
+.categoria:hover span {
+    transform: scale(1.12);
+}
+
+.footer-enlaces a {
+    transition: color 0.3s ease;
+}
+
+.footer-enlaces a:hover {
+    color: var(--verde-oscuro);
+}
+
+.accesos a {
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.accesos a:hover {
+    color: var(--verde-oscuro);
+    transform: scale(1.1);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--verde-principal);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
